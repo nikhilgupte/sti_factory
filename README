@@ -1,3 +1,9 @@
+# Forked from http://github.com/arvanasse/sti_factory
+# The only change is that this fork allows:
+#   Vehicle.new 'vehicle_type' => 'Truck'
+#	 Where as the original only allows
+#		Vehicle.new :vehicle_type => 'Truck' => DOES NOT
+#  Basically this version allows the key to be a string as well as a symbol
 # StiFactory
 # 
 # StiFactory converts the #new method of an ActiveRecord class into a subclass-aware factory method.
